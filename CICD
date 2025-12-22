@@ -1,0 +1,3 @@
+docker pull tenable/was-scanner:latest
+docker run -e WAS_MODE=cicd -e ACCESS_KEY=${27d35b3f5a0767c8da86615ae7b4fb48757214089555d677c24a922b6f682214}
+SECRET_KEY=${f58085fe20930a8e998451d895d1ed2ec16ca9e71b375daf0bad3a57c6e5a27c} -v ./:/scanner tenable/was-scanner:latest
