@@ -6,7 +6,7 @@ on:
   pull_request:
 jobs:
   tenablescan:
-    name: was-cicd
+    name: Webtest
     runs-on: ubuntu-latest
     steps:
       - name: Clone repo
