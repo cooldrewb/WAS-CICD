@@ -1,4 +1,4 @@
-"config_id"="595eb628-6eef-429f-93d1-437a64f1e5d0"
+"config_id"=f595bbfb-05b4-46aa-91fb-15eec488050b
 "results_visibility"=dashboard
 scan {
     assessment {
@@ -30,7 +30,10 @@ scan {
         "custom_user_agent"=false
         "include_scan_id"=false
         "request_concurrency"=10
-        "request_headers" {}
+        "request_headers" {
+            Accept="*/*"
+            Accept-Language="en-US,en;q=0.5"
+        }
         "request_redirect_limit"=3
         "request_timeout"=30
         "response_max_size"=5000000
@@ -160,6 +163,7 @@ scan {
         "page_limit"=1
     }
     session {}
+    target="http://petstore:8080"
     timeout="00:10:00"
 }
 "template_id"="3e5862a6-e672-4a22-97b8-9301ec3439c8"
